@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "mocha --timeout 30000",
+    "coverage": "nyc mocha test",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "showcoverage": "start coverage/lcov-report/index.html"
   },
